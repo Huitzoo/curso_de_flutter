@@ -1,0 +1,55 @@
+Flutter.
+
+Arquitectura de archivos:
+    
+Android: sirve para cambiar algunas configuraciones que requieran algo particular en android se edita aquí.
+    
+IOS: sirve para cambiar algunas configuraciones que requieran algo particular en android se edita aquí.
+    
+lib: Aquí se encuentran todos los archivos de dart para la aplicación.
+    
+pubspec.yaml: es el archivo de configuración donde se estructura la información de la aplicación se concentran algunas dependencias en este archivo, también se configuran todos los archivos externos a nuestra aplicación.
+
+flutter tiene un paradigma de programación declarativa.
+
+
+---------------------------------------------------------------
+
+La primera linea de cualquier dart debe de tener:
+import 'package:flutter/material.dart'; es su diseño
+
+
+StatelessWidget es la clase padre de todos los widgets
+
+El método build() se encarga de contruir o mostrar en el widget MyApp todo lo que 
+escriba a dentro.
+MaterialApp() Es la clase de la vista que se regresa en el build;
+
+
+
+main()=> runApp(MyApp()); es un lambda que utiliza el widget MyApp para correr la aplicación.
+
+En el home es donde se añade el scaffold
+scaffold es lo que pinta la vista de la aplicación y la estructura básica 
+es la siguiente:
+
+Scaffold(
+    appBar: ,
+    body: ,  
+    bottomNavigationBar: , 
+    floatingActionButton: ,
+    floatingActionButtonLocation:,
+    floatingActionButtonAnimator:,
+)
+
+
+Widgets básicos:
+
+    Text
+    Row
+    Column
+    Stack
+    Container
+
+
+
