@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'review_list.dart';
 
 void main() => runApp(MyApp());
 
@@ -12,30 +13,10 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blue,
         ),
         home: Scaffold(
-        body:Center(
-          child: Container(
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage("assets/images/fondo.jpg"),
-                fit: BoxFit.cover,
-              ),
-            ),
-            child: Center(
-              child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.black.withOpacity(0.5),
-                ),
-                width: 1000,
-                height: 100,
-                child: Center(
-                    child:Text('Esto es un mounstro xD',
-                    style: TextStyle(color:Colors.white,fontSize:25),
-                  ),  
-                ),
-              ),
-            ),
+          appBar: AppBar(
+            title: Text("Hola que tal")
           ),
-        ),
+          body: ReviewList(),
       ),
     );
   }
